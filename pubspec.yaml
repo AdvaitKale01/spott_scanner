@@ -1,0 +1,45 @@
+name: google_lens_clone
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  get_it: ^3.0.0+1
+  provider: ^3.1.0
+  catcher: ^0.2.4
+  giffy_dialog: ^1.3.0
+  sticky_headers: ^0.1.8
+  uuid: 2.0.1
+  typicons_flutter: ^0.2.1
+  intl: ^0.16.0
+  camera: ^0.5.2+1
+  path_provider: ^1.1.0
+  path: ^1.6.2
+  carousel_slider: ^1.3.1
+  simple_animations: ^1.3.4
+  vibration: 1.2.2
+  rubber: ^0.4.0
+  page_transition: "^1.1.5"
+  flutter_staggered_grid_view: ^0.3.0
+  image_picker: ^0.6.1+11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand.ttf

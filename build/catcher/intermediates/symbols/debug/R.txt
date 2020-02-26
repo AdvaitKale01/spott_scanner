@@ -1,0 +1,1 @@
+int drawable app_icon 0x7f090001

@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:1:1-14:12
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:1:1-14:12
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:1:1-14:12
+	package
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:2:3-38
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:3:5-13:19
+provider#com.dataxad.fluttermailer.FlutterMailerFileProvider
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:4:9-12:20
+	android:grantUriPermissions
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:8:13-47
+	android:authorities
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:6:13-64
+	android:exported
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:7:13-37
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:5:13-79
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:9:13-11:63
+	android:resource
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:11:17-61
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml:10:17-67
+uses-sdk
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\flutter_mailer-0.4.1+2\android\src\main\AndroidManifest.xml

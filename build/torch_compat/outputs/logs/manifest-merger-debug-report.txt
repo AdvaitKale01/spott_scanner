@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:2:5-36
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:4:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:5:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:6:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:7:5-70
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:7:19-67
+uses-feature#android.hardware.camera.flash
+ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml:8:19-63
+uses-sdk
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Advait Kale\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\torch_compat-1.0.1\android\src\main\AndroidManifest.xml
