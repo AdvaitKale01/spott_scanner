@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_lens_clone/models/carousal_item_model.dart';
 import 'package:google_lens_clone/services/imagepicker_services.dart';
 import 'package:google_lens_clone/viewmodels/home_camera_viewmodel.dart';
@@ -42,7 +41,7 @@ class _HomeCameraViewState extends State<HomeCameraView>
 				});
 				_initCameraController(cameras[selectedCameraIdx]).then((
 					void v) {
-						print('Camera ready');
+					
 					});
 			} else {
 				print("No camera available");

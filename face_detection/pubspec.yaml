@@ -1,0 +1,25 @@
+name: facedetection
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  image_picker: ^0.6.3+4
+  firebase_ml_vision: ^0.9.3+8
+  cupertino_icons: ^0.1.2
+  flutter_speed_dial: ^1.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
