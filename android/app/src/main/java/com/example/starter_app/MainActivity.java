@@ -1,4 +1,4 @@
-package com.example.google_lens_clone;
+package tk.advait.spott;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

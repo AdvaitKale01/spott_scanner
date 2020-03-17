@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "53380294424",
+    "firebase_url": "https://spott-smart-scanner.firebaseio.com",
+    "project_id": "spott-smart-scanner",
+    "storage_bucket": "spott-smart-scanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53380294424:android:bf3cca5213c938ad07a06d",
+        "android_client_info": {
+          "package_name": "tk.advait.spott"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53380294424-iqr5m44icbg4845a2n5af35ko0ioehjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQlp_xM7nlEbOD8aibXWLzgN39adMCgEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53380294424-iqr5m44icbg4845a2n5af35ko0ioehjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

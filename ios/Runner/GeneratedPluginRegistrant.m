@@ -3,16 +3,72 @@
 //
 
 #import "GeneratedPluginRegistrant.h"
+
+#if __has_include(<camera/CameraPlugin.h>)
 #import <camera/CameraPlugin.h>
+#else
+@import camera;
+#endif
+
+#if __has_include(<catcher/CatcherPlugin.h>)
 #import <catcher/CatcherPlugin.h>
-#import <device_info/DeviceInfoPlugin.h>
-#import <flutter_local_notifications/FlutterLocalNotificationsPlugin.h>
+#else
+@import catcher;
+#endif
+
+#if __has_include(<device_info/FLTDeviceInfoPlugin.h>)
+#import <device_info/FLTDeviceInfoPlugin.h>
+#else
+@import device_info;
+#endif
+
+#if __has_include(<firebase_core/FLTFirebaseCorePlugin.h>)
+#import <firebase_core/FLTFirebaseCorePlugin.h>
+#else
+@import firebase_core;
+#endif
+
+#if __has_include(<firebase_ml_vision/FLTFirebaseMlVisionPlugin.h>)
+#import <firebase_ml_vision/FLTFirebaseMlVisionPlugin.h>
+#else
+@import firebase_ml_vision;
+#endif
+
+#if __has_include(<flutter_mailer/FlutterMailerPlugin.h>)
 #import <flutter_mailer/FlutterMailerPlugin.h>
+#else
+@import flutter_mailer;
+#endif
+
+#if __has_include(<fluttertoast/FluttertoastPlugin.h>)
 #import <fluttertoast/FluttertoastPlugin.h>
-#import <image_picker/ImagePickerPlugin.h>
-#import <package_info/PackageInfoPlugin.h>
-#import <path_provider/PathProviderPlugin.h>
+#else
+@import fluttertoast;
+#endif
+
+#if __has_include(<image_picker/FLTImagePickerPlugin.h>)
+#import <image_picker/FLTImagePickerPlugin.h>
+#else
+@import image_picker;
+#endif
+
+#if __has_include(<package_info/FLTPackageInfoPlugin.h>)
+#import <package_info/FLTPackageInfoPlugin.h>
+#else
+@import package_info;
+#endif
+
+#if __has_include(<path_provider/FLTPathProviderPlugin.h>)
+#import <path_provider/FLTPathProviderPlugin.h>
+#else
+@import path_provider;
+#endif
+
+#if __has_include(<vibration/VibrationPlugin.h>)
 #import <vibration/VibrationPlugin.h>
+#else
+@import vibration;
+#endif
 
 @implementation GeneratedPluginRegistrant
 
@@ -20,7 +76,8 @@
   [CameraPlugin registerWithRegistrar:[registry registrarForPlugin:@"CameraPlugin"]];
   [CatcherPlugin registerWithRegistrar:[registry registrarForPlugin:@"CatcherPlugin"]];
   [FLTDeviceInfoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTDeviceInfoPlugin"]];
-  [FlutterLocalNotificationsPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterLocalNotificationsPlugin"]];
+  [FLTFirebaseCorePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseCorePlugin"]];
+  [FLTFirebaseMlVisionPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseMlVisionPlugin"]];
   [FlutterMailerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterMailerPlugin"]];
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];

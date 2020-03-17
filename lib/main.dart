@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_lens_clone/managers/lifecycle_manager.dart';
 import 'package:google_lens_clone/views/pages/home_camera_view.dart';
+import 'package:google_lens_clone/views/pages/splash_screen.dart';
 import 'package:google_lens_clone/views/shared/app_colors.dart';
 
 import 'locator.dart';
@@ -20,9 +20,21 @@ class MyApp extends StatelessWidget {
 				title: 'Spott',
 				theme: ThemeData(
 					primaryColor: PrimaryColor,
-					fontFamily: 'Quicksand'
+					fontFamily: 'Quicksand',
+					iconTheme: IconThemeData(
+						color: Colors.white,
+					),
 				),
-				home:HomeCameraView()
+				home: SplashScreen(),
+				routes: <String, WidgetBuilder>{
+					'/HomeCameraView': (BuildContext context) =>
+						HomeCameraView(),
+				},
+				darkTheme: ThemeData.dark().copyWith(
+					iconTheme: IconThemeData(
+						color: Colors.black,
+					),
+				),
 			),
 		);
 	}
