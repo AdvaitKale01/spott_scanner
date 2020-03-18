@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:camera/camera.dart';
+import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:google_lens_clone/models/carousal_item_model.dart';
 import 'package:google_lens_clone/services/imagepicker_services.dart';
@@ -30,9 +31,7 @@ class _HomeCameraViewState extends State<HomeCameraView>
 	static int maincameraindex = 0; //back camera
 	BuildContext _context;
 	
-	@override
-	void initState() {
-		super.initState();
+	Future _initializeCamera() {
 		availableCameras().then((availableCameras) {
 			cameras = availableCameras;
 			if (cameras.length > 0) {
@@ -42,16 +41,22 @@ class _HomeCameraViewState extends State<HomeCameraView>
 				_initCameraController(cameras[selectedCameraIdx]).then((
 					void v) {
 					
-					});
+				});
 			} else {
 				print("No camera available");
 			}
 		}).catchError((err) {
 			print('Camera Error: $err.code\nError Message: $err.message');
 		});
-		
+
 //		Initiliaze camera controller
 //		 _initCameraController(cameras[maincameraindex]).then((void v) {});
+	}
+	
+	@override
+	void initState() {
+		_initializeCamera();
+		super.initState();
 	}
 	
 	Future _initCameraController(CameraDescription cameraDescription) async {
@@ -60,7 +65,8 @@ class _HomeCameraViewState extends State<HomeCameraView>
 		}
 		
 		cameracontroller =
-			CameraController(cameraDescription, ResolutionPreset.ultraHigh, enableAudio: false);
+			CameraController(cameraDescription, ResolutionPreset.ultraHigh,
+				enableAudio: false);
 		
 		// If the controller is updated then update the UI.
 		cameracontroller.addListener(() {
@@ -93,6 +99,31 @@ class _HomeCameraViewState extends State<HomeCameraView>
 		CarousalItemModel(Icons.library_books, "Text Recognition"),
 //		CarousalItemModel(Icons.fastfood,"Dining"),
 	];
+	
+	Future<String> _recognizeTextFromImage(decodedImage) async {
+		final FirebaseVisionImage visionImage = FirebaseVisionImage.fromFilePath(decodedImage);
+		final TextRecognizer textRecognizer = FirebaseVision.instance
+			.textRecognizer();
+		final VisionText visionText = await textRecognizer.processImage(
+			visionImage);
+		String text = visionText.text;
+		for (TextBlock block in visionText.blocks) {
+			final Rect boundingBox = block.boundingBox;
+			final List<Offset> cornerPoints = block.cornerPoints;
+			final String text = block.text;
+			final List<RecognizedLanguage> languages = block
+				.recognizedLanguages;
+			
+//			for (TextLine line in block.lines) {
+//				// Same getters as TextBlock
+//				for (TextElement element in line.elements) {
+//					// Same getters as TextBlock
+//
+//				}
+//			}
+		}
+		return(text);
+	}
 	
 	@override
 	Widget build(BuildContext context) {
@@ -130,12 +161,13 @@ class _HomeCameraViewState extends State<HomeCameraView>
 				(await getTemporaryDirectory()).path,
 				'${DateTime.now()}.png',
 			);
-			print(path);
+			print('path : $path');
 			imagePath = path;
 			
 			await cameracontroller.takePicture(path);
 			
-			var decodedImage = await decodeImageFromList(File(path).readAsBytesSync());
+			var decodedImage = await decodeImageFromList(
+				File(path).readAsBytesSync());
 			
 			//Process images here. Implement the desigred functionality
 			if (pageIndex == 0) {
@@ -143,6 +175,8 @@ class _HomeCameraViewState extends State<HomeCameraView>
 				
 			}
 			else if (pageIndex == 1) {
+				String text = await _recognizeTextFromImage(imagePath);
+				
 				await Navigator.push(
 					_context,
 					PageTransition(
@@ -151,6 +185,7 @@ class _HomeCameraViewState extends State<HomeCameraView>
 							imagePath: path,
 							islandscape: decodedImage.width >
 								decodedImage.height,
+							recognizedText: text,
 						)));
 			}
 			else {
@@ -167,10 +202,12 @@ class _HomeCameraViewState extends State<HomeCameraView>
 	
 	void OpenGallery() async {
 		_image = await selectedImage.pickerImageFromGallery();
+		String text = await _recognizeTextFromImage(_image);
 		setState(() {
 			fileSelected = true;
 			print('Image Selected :  $_image');
-			Navigator.push(_context, MaterialPageRoute(builder: (context) => SelectedImageView(imagePath: imagePath, image : _image)));
+			Navigator.push(_context, MaterialPageRoute(builder: (context) =>
+				SelectedImageView(imagePath: imagePath, image: _image,)));
 		});
 		
 		//		 model.services.i_imagepicker.pickerImageFromGallery();

@@ -15,6 +15,10 @@ class SelectedImageView extends StatefulWidget {
 class _SelectedImageViewState extends State<SelectedImageView> {
 	
 	@override
+  void initState() {
+    super.initState();
+  }
+	@override
 	Widget build(BuildContext context) {
 		return BaseView<SearchImageViewModel>(
 		  onModelReady: (model) => model.getDefaultData(widget.imagePath),

@@ -1,6 +1,6 @@
 //Here write Image Searching Algorithm
 import 'dart:io';
-
+import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:google_lens_clone/viewmodels/search_image_viewmodel.dart';
 import 'package:google_lens_clone/views/core/base_view.dart';
@@ -12,8 +12,10 @@ class SearchImageView extends StatefulWidget {
 	
 	final String imagePath;
 	final bool islandscape;
+	final List<String> objects;
+	final String recognizedText;
 	
-	SearchImageView({this.imagePath, this.islandscape});
+	SearchImageView({this.imagePath, this.islandscape, this.objects, this.recognizedText});
 	
 	@override
 	_SearchImageViewState createState() => _SearchImageViewState();
@@ -21,10 +23,12 @@ class SearchImageView extends StatefulWidget {
 
 class _SearchImageViewState extends State<SearchImageView> {
 	
-	
 	bool hide = false; // hide the widget on top of bottom sheet once reach top
+	
+	
 	@override
 	void initState() {
+		print(widget.recognizedText);
 		super.initState();
 	}
 	

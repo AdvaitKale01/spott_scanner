@@ -7,14 +7,13 @@ INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\Andro
 MERGED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from [:catcher] C:\Users\Advait Kale\Project 2020\Spott\build\catcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:fluttertoast] C:\Users\Advait Kale\Project 2020\Spott\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core_web] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:device_info] C:\Users\Advait Kale\Project 2020\Spott\build\device_info\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:package_info] C:\Users\Advait Kale\Project 2020\Spott\build\package_info\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] C:\Users\Advait Kale\Project 2020\Spott\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_macos] C:\Users\Advait Kale\Project 2020\Spott\build\path_provider_macos\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:flutter_mailer] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_mailer\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
@@ -69,6 +68,7 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Advait Kale\.g
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\a126318488a09ac10d85a95fb3a07ff0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\970102c543e048158f39ddffb3e33856\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\257c350166d5194dba52d5e990563a27\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-2.1.0.aar\d0e6976844d9a604bbf85bccda6cea93\AndroidManifest.xml:2:1-10:12
 INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml:1:1-9:12
 INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml:1:1-9:12
 INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml:1:1-9:12
@@ -88,8 +88,6 @@ INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\Andr
 		ADDED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\AndroidManifest.xml:9:5-32:19
-MERGED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
@@ -140,6 +138,8 @@ MERGED from [androidx.core:core:1.0.1] C:\Users\Advait Kale\.gradle\caches\trans
 MERGED from [androidx.core:core:1.0.1] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\58a832f9969fa55806a0d1053fe25364\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c5cbc7a7bbe285422928aeb7ec7971ea\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c5cbc7a7bbe285422928aeb7ec7971ea\AndroidManifest.xml:22:5-23:19
+MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-2.1.0.aar\d0e6976844d9a604bbf85bccda6cea93\AndroidManifest.xml:8:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-2.1.0.aar\d0e6976844d9a604bbf85bccda6cea93\AndroidManifest.xml:8:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\58a832f9969fa55806a0d1053fe25364\AndroidManifest.xml:22:18-86
 	android:label
@@ -186,10 +186,6 @@ MERGED from [:catcher] C:\Users\Advait Kale\Project 2020\Spott\build\catcher\int
 MERGED from [:catcher] C:\Users\Advait Kale\Project 2020\Spott\build\catcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\Advait Kale\Project 2020\Spott\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\Advait Kale\Project 2020\Spott\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:device_info] C:\Users\Advait Kale\Project 2020\Spott\build\device_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:device_info] C:\Users\Advait Kale\Project 2020\Spott\build\device_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:package_info] C:\Users\Advait Kale\Project 2020\Spott\build\package_info\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -202,6 +198,8 @@ MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -310,6 +308,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\970102c543e048158f39ddffb3e33856\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\257c350166d5194dba52d5e990563a27\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\257c350166d5194dba52d5e990563a27\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-2.1.0.aar\d0e6976844d9a604bbf85bccda6cea93\AndroidManifest.xml:5:5-6:41
+MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-2.1.0.aar\d0e6976844d9a604bbf85bccda6cea93\AndroidManifest.xml:5:5-6:41
 INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml
 INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
@@ -317,6 +317,7 @@ INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\Andr
 		INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml
 		INJECTED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml:6:5-66
@@ -338,30 +339,6 @@ MERGED from [:vibration] C:\Users\Advait Kale\Project 2020\Spott\build\vibration
 MERGED from [:vibration] C:\Users\Advait Kale\Project 2020\Spott\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-66
 	android:name
 		ADDED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\debug\AndroidManifest.xml:7:22-63
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-iid-20.0.2.aar\ab4714d62ebf1e5130d5598194f0ba87\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-iid-20.0.2.aar\ab4714d62ebf1e5130d5598194f0ba87\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:32:9-36:35
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:32:9-36:35
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:29:13-37
-	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:36:13-32
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:34:13-43
-	android:name
-		ADDED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-	android:name
-		ADDED from [:firebase_core] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
 	android:name
@@ -394,6 +371,22 @@ uses-permission#android.permission.RECORD_AUDIO
 ADDED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-71
 	android:name
 		ADDED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-68
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-iid-20.0.2.aar\ab4714d62ebf1e5130d5598194f0ba87\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-iid-20.0.2.aar\ab4714d62ebf1e5130d5598194f0ba87\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-17.2.2.aar\8580b1ed53390da1d69e6d19e3717fee\AndroidManifest.xml:29:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\jetified-firebase-common-19.3.0.aar\f7b57158361da92b4d9df0f3ce4bbf6d\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebasemlvision.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value

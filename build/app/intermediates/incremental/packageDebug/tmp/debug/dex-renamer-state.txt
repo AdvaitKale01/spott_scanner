@@ -1,4 +1,4 @@
-#Sat Mar 14 19:41:41 IST 2020
+#Tue Mar 17 20:44:32 IST 2020
 path.38=classes.dex
 base.10=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\3
 path.37=classes.dex
@@ -9,6 +9,7 @@ path.33=classes.dex
 path.32=classes.dex
 path.31=classes.dex
 path.30=classes.dex
+renamed.46=classes47.dex
 renamed.45=classes46.dex
 base.9=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\29
 renamed.44=classes45.dex
@@ -85,6 +86,7 @@ renamed.23=classes24.dex
 renamed.22=classes23.dex
 renamed.21=classes22.dex
 renamed.20=classes21.dex
+base.46=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\46
 base.45=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\23
 base.44=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\45
 base.43=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\31
@@ -121,6 +123,7 @@ base.23=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\
 base.22=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\12
 base.21=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\34
 base.20=C\:\\Users\\Advait Kale\\Project 2020\\Spott\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\20
+path.46=classes.dex
 path.45=classes.dex
 path.44=classes.dex
 path.43=classes.dex
