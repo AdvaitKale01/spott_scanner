@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:flutter/services.dart';
 
 class ReverseTextView extends StatelessWidget {
   ScrollController scrollController;
@@ -14,16 +14,21 @@ class ReverseTextView extends StatelessWidget {
     return new Scaffold(
       body: Card(
         elevation: 1.0,
-        child: new StaggeredGridView.countBuilder(
+        child: ListView.builder(
           physics: NeverScrollableScrollPhysics(),
           controller: scrollController,
           primary: false,
-          crossAxisCount: 1,
-          mainAxisSpacing: 4.0,
-          crossAxisSpacing: 4.0,
-          itemBuilder: (context, index) =>
-              TextInfoTileWidget(text: listTextTile[index]),
-          staggeredTileBuilder: (index) => StaggeredTile.fit(4),
+//          crossAxisCount: 1,
+//          mainAxisSpacing: 4.0,
+//          crossAxisSpacing: 4.0,
+          itemBuilder: (context, index) {
+            print('index : $index');
+            if (index < listTextTile.length) {
+              return TextInfoTileWidget(text: listTextTile[index]);
+            }
+            return null;
+          },
+//          staggeredTileBuilder: (index) => StaggeredTile.fit(2),
         ),
       ),
     );
@@ -38,11 +43,29 @@ class TextInfoTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 40, bottom: 40, left: 20, right: 20),
-      child: SelectableText(
-        text,
-        style: TextStyle(
-            fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1),
+      padding: const EdgeInsets.only(top: 30, bottom: 30, left: 20, right: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          SelectableText(
+            text,
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1),
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.content_copy,
+              color: Theme.of(context).accentIconTheme.color,
+            ),
+            onPressed: () async {
+              await Clipboard.setData(ClipboardData(text: text));
+              Scaffold.of(context).showSnackBar(SnackBar(
+                content: Text('Copied to Clipboard!'),
+                behavior: SnackBarBehavior.floating,
+              ));
+            },
+          ),
+        ],
       ),
     );
   }

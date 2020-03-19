@@ -6,10 +6,10 @@ import 'package:rubber/rubber.dart';
 
 class RubberBottomSheetTextRecognitionWidget extends StatefulWidget {
   final List<String> listOfRecognizedText;
-  final double initialvalue;
 
-  RubberBottomSheetTextRecognitionWidget(
-      {this.listOfRecognizedText, this.initialvalue});
+  RubberBottomSheetTextRecognitionWidget({
+    this.listOfRecognizedText,
+  });
 
   @override
   _RubberBottomSheetTextRecognitionWidgetState createState() =>
@@ -33,7 +33,7 @@ class _RubberBottomSheetTextRecognitionWidgetState
       halfBoundValue: AnimationControllerValue(percentage: 0.5),
       upperBoundValue: AnimationControllerValue(percentage: 1),
       duration: Duration(milliseconds: 200),
-      //initialValue: widget.initialvalue
+//        initialValue: widget.initialvalue
     );
 
     Future.delayed(const Duration(milliseconds: 800), () {
@@ -72,7 +72,7 @@ class _RubberBottomSheetTextRecognitionWidgetState
                 ),
           Expanded(
             child: Container(
-              //color: Colors.amber,
+//              color: Colors.amber,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(10, 20, 0, 0),
                 child: Text(
