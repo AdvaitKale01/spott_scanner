@@ -13,6 +13,7 @@ import 'package:google_lens_clone/utils/datetime_utils.dart';
 import 'package:google_lens_clone/viewmodels/carousal_slider_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/home_camera_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/search_image_viewmodel.dart';
+import 'package:google_lens_clone/viewmodels/text_recognition_viewmodel.dart';
 
 import 'interfaces/i_flashlight.dart';
 import 'interfaces/i_repository.dart';
@@ -26,6 +27,7 @@ locator.registerFactory(() =>   CarousalSliderViewModel());
 
 locator.registerFactory(()=>SearchImageViewModel());
 
+locator.registerFactory(()=>TextRecognitionViewModel());
 
  locator.registerLazySingleton<IMockData>(()=> new MockService());
  locator.registerLazySingleton<IRepository>(()=> new Repository());

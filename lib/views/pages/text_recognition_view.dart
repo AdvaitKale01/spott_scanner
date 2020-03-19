@@ -6,6 +6,7 @@ import 'package:google_lens_clone/viewmodels/search_image_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/text_recognition_viewmodel.dart';
 import 'package:google_lens_clone/views/core/base_view.dart';
 import 'package:google_lens_clone/views/widgets/lens_appbar.dart';
+import 'package:google_lens_clone/views/widgets/rubberbottomsheet_text_recognition.dart';
 import 'package:google_lens_clone/views/widgets/rubberbottomsheet_widget.dart';
 
 class TextRecognitionView extends StatefulWidget {
@@ -34,8 +35,8 @@ class _TextRecognitionViewState extends State<TextRecognitionView> {
 	
 	@override
 	Widget build(BuildContext context) {
-		return BaseView<SearchImageViewModel>(
-			onModelReady: (model) => model.getDefaultData(widget.imagePath),
+		return BaseView<TextRecognitionViewModel>(
+			onModelReady: (model) => model.getDefaultData(widget.recognizedText),
 			builder: (context, model, child) =>
 				Scaffold(
 					body: SafeArea(
@@ -48,11 +49,11 @@ class _TextRecognitionViewState extends State<TextRecognitionView> {
 										height: double.infinity,
 										width: double.infinity),
 								),
-//								RubberBottomSheetWidget(
-//									initialvalue: 20.0,
-//									listofsearchimage: model
-//										.list_imagetilemodel,),
-								Text('${widget.recognizedText}'),
+								RubberBottomSheetTextRecognitionWidget(
+									initialvalue: 20.0,
+									listOfRecognizedText: model
+										.list_texttilemodel,),
+//								SelectableText('${widget.recognizedText}'),
 								LensAppBar(false, onpop, null)
 							
 							],

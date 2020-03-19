@@ -11,28 +11,25 @@ import 'core/base_viewmodel.dart';
 
 class TextRecognitionViewModel extends BaseViewModel {
 	
-	List<ImageTileModel> list_texttilemodel = [];
+	List<String> list_texttilemodel = [];
 	
-	void getDefaultData(String path) async {
+	void getDefaultData(String recognizedText) async {
 		setState(ViewState.Busy);
 		
-		var imagebyte = File(path).readAsBytesSync();
+//		var imagebyte = File(path).readAsBytesSync();
+
+//		var lis_ofsizes = _createSizes(100);
 		
-		var lis_ofsizes = _createSizes(100);
+		list_texttilemodel.add(recognizedText);
 		
-		for (var size in lis_ofsizes) {
-			list_texttilemodel.add(new ImageTileModel(
-				imagebyte, "Feature coming soon", "google lens clone ui",
-				size));
-		}
 		setState(ViewState.Idle);
 	}
 	
-	List<Size> _createSizes(int count) {
-		Random rnd = new Random();
-		return new List.generate(count,
-				(i) => new Size((rnd.nextInt(50) + 200).toDouble(),
-				rnd.nextInt(100) + 300.toDouble()));
-	}
+//	List<Size> _createSizes(int count) {
+//		Random rnd = new Random();
+//		return new List.generate(count,
+//				(i) => new Size((rnd.nextInt(50) + 200).toDouble(),
+//				rnd.nextInt(100) + 300.toDouble()));
+//	}
 	
 }
