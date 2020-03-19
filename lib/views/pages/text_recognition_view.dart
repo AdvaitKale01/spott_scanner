@@ -50,7 +50,7 @@ class _TextRecognitionViewState extends State<TextRecognitionView> {
 										width: double.infinity),
 								),
 								RubberBottomSheetTextRecognitionWidget(
-									initialvalue: 20.0,
+									initialvalue: 1.0,
 									listOfRecognizedText: model
 										.list_texttilemodel,),
 //								SelectableText('${widget.recognizedText}'),
