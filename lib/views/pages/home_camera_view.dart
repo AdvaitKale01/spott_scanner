@@ -9,6 +9,7 @@ import 'package:google_lens_clone/viewmodels/home_camera_viewmodel.dart';
 import 'package:google_lens_clone/views/core/base_view.dart';
 import 'package:google_lens_clone/views/pages/search_image_view.dart';
 import 'package:google_lens_clone/views/pages/selected_image_view.dart';
+import 'package:google_lens_clone/views/pages/text_recognition_view.dart';
 import 'package:google_lens_clone/views/widgets/carousal_slider_widget.dart';
 import 'package:google_lens_clone/views/widgets/lens_appbar.dart';
 import 'package:page_transition/page_transition.dart';
@@ -190,7 +191,18 @@ class _HomeCameraViewState extends State<HomeCameraView>
 			}
 			else {
 				//TODO: Implement Text Recognition Functionality
+				String text = await _recognizeTextFromImage(imagePath);
 				
+				await Navigator.push(
+					_context,
+					PageTransition(
+						type: PageTransitionType.fade,
+						child: TextRecognitionView(
+							imagePath: path,
+							islandscape: decodedImage.width >
+								decodedImage.height,
+							recognizedText: text,
+						)));
 			}
 		} catch (e) {
 			// If an error occurs, log the error to the console.
