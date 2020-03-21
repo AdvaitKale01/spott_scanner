@@ -188,7 +188,6 @@ class _HomeCameraViewState extends State<HomeCameraView>
                   islandscape: decodedImage.width > decodedImage.height,
                   recognizedText: text,
                   box: boundingBox,
-                  languages: languages,
                   cornerPoints: cornerPoints,
                 )));
       }

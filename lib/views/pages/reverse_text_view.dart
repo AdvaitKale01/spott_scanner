@@ -4,10 +4,12 @@ import 'package:flutter/services.dart';
 class ReverseTextView extends StatelessWidget {
   ScrollController scrollController;
   List<String> listTextTile;
-
 //  ReverseImageView(this._scrollController);
 
-  ReverseTextView(this.scrollController, this.listTextTile);
+  ReverseTextView(
+    this.scrollController,
+    this.listTextTile,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,9 @@ class ReverseTextView extends StatelessWidget {
           itemBuilder: (context, index) {
             print('index : $index');
             if (index < listTextTile.length) {
-              return TextInfoTileWidget(text: listTextTile[index]);
+              return TextInfoTileWidget(
+                text: listTextTile[index],
+              );
             }
             return null;
           },
@@ -37,7 +41,6 @@ class ReverseTextView extends StatelessWidget {
 
 class TextInfoTileWidget extends StatelessWidget {
   final text;
-
   TextInfoTileWidget({Key key, this.text}) : super(key: key);
 
   @override
