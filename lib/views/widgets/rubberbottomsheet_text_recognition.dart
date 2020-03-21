@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_lens_clone/customize_existing_lib/modified_rubberbottomsheet.dart';
+import 'package:google_lens_clone/models/text_recognition_model.dart';
 import 'package:google_lens_clone/views/pages/positioned.dart';
 import 'package:google_lens_clone/views/pages/reverse_text_view.dart';
 import 'package:rubber/rubber.dart';
 
 class RubberBottomSheetTextRecognitionWidget extends StatefulWidget {
   final List<String> listOfRecognizedText;
+  final RecognizedTextModel recognizedText;
 
   RubberBottomSheetTextRecognitionWidget({
     this.listOfRecognizedText,
+    this.recognizedText,
   });
 
   @override
@@ -92,8 +95,10 @@ class _RubberBottomSheetTextRecognitionWidgetState
         ],
       ),
       headerHeight: hide ? 80 : 150, //hide?80 : 100,
-      upperLayer: ReverseTextView(_scrollController,
-          widget.listOfRecognizedText), // InfoView(),//_getBodyLayer(),
+      upperLayer: ReverseTextView(
+        _scrollController,
+        widget.listOfRecognizedText,
+      ), // InfoView(),//_getBodyLayer(),
 
       animationController: _rubbercontroller,
     );

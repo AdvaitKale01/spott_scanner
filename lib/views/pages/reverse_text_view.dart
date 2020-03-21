@@ -52,18 +52,31 @@ class TextInfoTileWidget extends StatelessWidget {
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1),
           ),
-          IconButton(
-            icon: Icon(
-              Icons.content_copy,
-              color: Theme.of(context).accentIconTheme.color,
-            ),
-            onPressed: () async {
-              await Clipboard.setData(ClipboardData(text: text));
-              Scaffold.of(context).showSnackBar(SnackBar(
-                content: Text('Copied to Clipboard!'),
-                behavior: SnackBarBehavior.floating,
-              ));
-            },
+          Column(
+            children: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.content_copy,
+                  color: Theme.of(context).accentIconTheme.color,
+                ),
+                onPressed: () async {
+                  await Clipboard.setData(ClipboardData(text: text));
+                  Scaffold.of(context).showSnackBar(SnackBar(
+                    content: Text('Copied to Clipboard!'),
+                    behavior: SnackBarBehavior.floating,
+                  ));
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.search,
+                  color: Theme.of(context).accentIconTheme.color,
+                ),
+                onPressed: () async {
+                  //TODO: Add Search Functionality
+                },
+              ),
+            ],
           ),
         ],
       ),

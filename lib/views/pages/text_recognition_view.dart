@@ -1,6 +1,7 @@
 //Here write Image Searching Algorithm
 import 'dart:io';
 
+import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
 import 'package:google_lens_clone/viewmodels/text_recognition_viewmodel.dart';
 import 'package:google_lens_clone/views/core/base_view.dart';
@@ -12,9 +13,18 @@ class TextRecognitionView extends StatefulWidget {
   final bool islandscape;
   final List<String> objects;
   final String recognizedText;
+  final Rect box;
+  final List<Offset> cornerPoints;
+  final List<RecognizedLanguage> languages;
 
   TextRecognitionView(
-      {this.imagePath, this.islandscape, this.objects, this.recognizedText});
+      {this.imagePath,
+      this.islandscape,
+      this.objects,
+      this.recognizedText,
+      this.box,
+      this.cornerPoints,
+      this.languages});
 
   @override
   _TextRecognitionViewState createState() =>
