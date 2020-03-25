@@ -1,4 +1,3 @@
-//Here write Image Searching Algorithm
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -6,7 +5,6 @@ import 'package:google_lens_clone/viewmodels/text_recognition_viewmodel.dart';
 import 'package:google_lens_clone/views/core/base_view.dart';
 import 'package:google_lens_clone/views/widgets/lens_appbar.dart';
 import 'package:google_lens_clone/views/widgets/rubberbottomsheet_text_recognition.dart';
-import 'package:google_lens_clone/views/widgets/text_recognition_painter.dart';
 
 class TextRecognitionView extends StatefulWidget {
   final String imagePath;
@@ -58,11 +56,11 @@ class _TextRecognitionViewState extends State<TextRecognitionView> {
                           height: double.infinity,
                           width: double.infinity),
                     ),
-                    CustomPaint(
-                      painter: TextRecognitionPainter(
-                          box: widget.box, cornerPoints: widget.cornerPoints),
-                      willChange: false,
-                    ),
+//                    CustomPaint(
+//                      painter: TextRecognitionPainter(
+//                          box: widget.box, cornerPoints: widget.cornerPoints),
+//                      willChange: false,
+//                    ),
                     RubberBottomSheetTextRecognitionWidget(
                       listOfRecognizedText: model.list_texttilemodel,
                     ),

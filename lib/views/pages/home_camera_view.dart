@@ -10,6 +10,7 @@ import 'package:google_lens_clone/views/core/base_view.dart';
 import 'package:google_lens_clone/views/pages/search_image_view.dart';
 import 'package:google_lens_clone/views/pages/selected_image_view.dart';
 import 'package:google_lens_clone/views/pages/text_recognition_view.dart';
+import 'package:google_lens_clone/views/pages/text_translation_view.dart';
 import 'package:google_lens_clone/views/widgets/carousal_slider_widget.dart';
 import 'package:google_lens_clone/views/widgets/lens_appbar.dart';
 import 'package:page_transition/page_transition.dart';
@@ -163,7 +164,16 @@ class _HomeCameraViewState extends State<HomeCameraView>
       //Process images here. Implement the desigred functionality
       if (pageIndex == 0) {
         //TODO: Implement Translate Functionality
-
+        String text = await _recognizeTextFromImage(imagePath);
+        await Navigator.push(
+            _context,
+            PageTransition(
+                type: PageTransitionType.fade,
+                child: TextTranslationView(
+                  imagePath: path,
+                  islandscape: decodedImage.width > decodedImage.height,
+                  recognizedText: text,
+                )));
       } else if (pageIndex == 1) {
         String text = await _recognizeTextFromImage(imagePath);
 

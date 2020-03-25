@@ -1,4 +1,3 @@
-
 import 'package:get_it/get_it.dart';
 import 'package:google_lens_clone/interfaces/i_imagepicker.dart';
 import 'package:google_lens_clone/interfaces/i_mockdata.dart';
@@ -14,28 +13,28 @@ import 'package:google_lens_clone/viewmodels/carousal_slider_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/home_camera_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/search_image_viewmodel.dart';
 import 'package:google_lens_clone/viewmodels/text_recognition_viewmodel.dart';
+import 'package:google_lens_clone/viewmodels/text_translation_viewmodel.dart';
 
 import 'interfaces/i_flashlight.dart';
 import 'interfaces/i_repository.dart';
 
 GetIt locator = GetIt.I;
 void setupLocator() {
- 
- locator.registerFactory(() =>  HomeCameraViewModel());
+  locator.registerFactory(() => HomeCameraViewModel());
 
-locator.registerFactory(() =>   CarousalSliderViewModel());
+  locator.registerFactory(() => CarousalSliderViewModel());
 
-locator.registerFactory(()=>SearchImageViewModel());
+  locator.registerFactory(() => SearchImageViewModel());
 
-locator.registerFactory(()=>TextRecognitionViewModel());
+  locator.registerFactory(() => TextRecognitionViewModel());
 
- locator.registerLazySingleton<IMockData>(()=> new MockService());
- locator.registerLazySingleton<IRepository>(()=> new Repository());
- locator.registerSingleton(new DateTimeUtils());
- locator.registerLazySingleton<IVibration>(()=> new VibrationServices());
- locator.registerLazySingleton<IFlashLight>(()=> new FlashLightServices());
- locator.registerLazySingleton<IImagePicker>(()=> new ImagePickerServices());
- locator.registerSingleton(new Services());
+  locator.registerFactory(() => TextTranslationViewModel());
 
-  
+  locator.registerLazySingleton<IMockData>(() => new MockService());
+  locator.registerLazySingleton<IRepository>(() => new Repository());
+  locator.registerSingleton(new DateTimeUtils());
+  locator.registerLazySingleton<IVibration>(() => new VibrationServices());
+  locator.registerLazySingleton<IFlashLight>(() => new FlashLightServices());
+  locator.registerLazySingleton<IImagePicker>(() => new ImagePickerServices());
+  locator.registerSingleton(new Services());
 }

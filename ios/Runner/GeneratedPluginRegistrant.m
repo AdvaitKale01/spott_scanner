@@ -64,6 +64,12 @@
 @import tflite;
 #endif
 
+#if __has_include(<url_launcher/FLTURLLauncherPlugin.h>)
+#import <url_launcher/FLTURLLauncherPlugin.h>
+#else
+@import url_launcher;
+#endif
+
 #if __has_include(<vibration/VibrationPlugin.h>)
 #import <vibration/VibrationPlugin.h>
 #else
@@ -83,6 +89,7 @@
   [FLTPackageInfoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPackageInfoPlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
   [TflitePlugin registerWithRegistrar:[registry registrarForPlugin:@"TflitePlugin"]];
+  [FLTURLLauncherPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTURLLauncherPlugin"]];
   [VibrationPlugin registerWithRegistrar:[registry registrarForPlugin:@"VibrationPlugin"]];
 }
 

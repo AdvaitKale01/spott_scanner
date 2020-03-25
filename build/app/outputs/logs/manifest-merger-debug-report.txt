@@ -13,10 +13,13 @@ MERGED from [:path_provider] C:\Users\Advait Kale\Project 2020\Spott\build\path_
 MERGED from [:path_provider_macos] C:\Users\Advait Kale\Project 2020\Spott\build\path_provider_macos\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:url_launcher_macos] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_macos\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_mailer] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_mailer\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:url_launcher_web] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:vibration] C:\Users\Advait Kale\Project 2020\Spott\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.2.aar\bc083701e8c24cf74d456707022cb309\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\play-services-measurement-17.2.2.aar\fde6d8fa26276fde24bfd759124b51e8\AndroidManifest.xml:17:1-55:12
@@ -90,6 +93,8 @@ application
 ADDED from C:\Users\Advait Kale\Project 2020\Spott\android\app\src\main\AndroidManifest.xml:9:5-32:19
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-20:19
+MERGED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:flutter_mailer] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_mailer\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
@@ -198,14 +203,20 @@ MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_
 MERGED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:tflite] C:\Users\Advait Kale\Project 2020\Spott\build\tflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_ml_vision] C:\Users\Advait Kale\Project 2020\Spott\build\firebase_ml_vision\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_macos] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_macos\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_macos] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_macos\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_mailer] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_mailer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_mailer] C:\Users\Advait Kale\Project 2020\Spott\build\flutter_mailer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:vibration] C:\Users\Advait Kale\Project 2020\Spott\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:vibration] C:\Users\Advait Kale\Project 2020\Spott\build\vibration\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] C:\Users\Advait Kale\.gradle\caches\transforms-1\files-1.1\firebase-analytics-17.2.2.aar\bc083701e8c24cf74d456707022cb309\AndroidManifest.xml:5:5-44
@@ -363,6 +374,14 @@ ADDED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_p
 		ADDED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
 	android:name
 		ADDED from [:image_picker] C:\Users\Advait Kale\Project 2020\Spott\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\Advait Kale\Project 2020\Spott\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 uses-permission#android.permission.CAMERA
 ADDED from [:camera] C:\Users\Advait Kale\Project 2020\Spott\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-65
 	android:name

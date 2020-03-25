@@ -12,6 +12,7 @@ import io.flutter.plugins.imagepicker.ImagePickerPlugin;
 import io.flutter.plugins.packageinfo.PackageInfoPlugin;
 import io.flutter.plugins.pathprovider.PathProviderPlugin;
 import sq.flutter.tflite.TflitePlugin;
+import io.flutter.plugins.urllauncher.UrlLauncherPlugin;
 import com.benjaminabel.vibration.VibrationPlugin;
 
 /**
@@ -33,6 +34,7 @@ public final class GeneratedPluginRegistrant {
     PackageInfoPlugin.registerWith(registry.registrarFor("io.flutter.plugins.packageinfo.PackageInfoPlugin"));
     PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
     TflitePlugin.registerWith(registry.registrarFor("sq.flutter.tflite.TflitePlugin"));
+    UrlLauncherPlugin.registerWith(registry.registrarFor("io.flutter.plugins.urllauncher.UrlLauncherPlugin"));
     VibrationPlugin.registerWith(registry.registrarFor("com.benjaminabel.vibration.VibrationPlugin"));
   }
 
