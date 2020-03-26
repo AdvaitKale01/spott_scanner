@@ -29,6 +29,8 @@ class _TextTranslationViewState extends State<TextTranslationView> {
   _TextTranslationViewState(this.recognizedText);
   String initialSentence = '';
 
+  String _makeSentenceFromListOfWords(listOfWords) {}
+
   @override
   void initState() {
     recognizedTextList = recognizedText.split('\n');
@@ -38,6 +40,7 @@ class _TextTranslationViewState extends State<TextTranslationView> {
     }
     initialSentence = initialSentence.substring(2);
     print(initialSentence);
+    _makeSentenceFromListOfWords(recognizedTextList);
     super.initState();
   }
 

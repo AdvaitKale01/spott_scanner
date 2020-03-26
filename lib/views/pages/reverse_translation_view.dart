@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_lens_clone/views/widgets/supported_languages.dart';
 import 'package:translator/translator.dart';
 
@@ -39,16 +40,42 @@ class _ReverseTranslationViewState extends State<ReverseTranslationView> {
           controller: widget.scrollController,
           primary: false,
           children: <Widget>[
-            Container(
-              child: Text(
-                'Detected Text',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                softWrap: true,
-              ),
-              padding: EdgeInsets.only(top: 20, bottom: 0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Container(
+                  child: Text(
+                    'Detected Text',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    softWrap: true,
+                  ),
+                  padding: EdgeInsets.only(top: 20, bottom: 0, left: 10),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20, bottom: 0),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.content_copy,
+                      color: Theme.of(context).accentIconTheme.color,
+                    ),
+                    onPressed: () async {
+                      await Clipboard.setData(
+                          ClipboardData(text: widget.sentence));
+
+                      Scaffold.of(context).showSnackBar(SnackBar(
+                        content: Text('Copied to Clipboard!'),
+                        behavior: SnackBarBehavior.floating,
+                      ));
+                    },
+                  ),
+                ),
+              ],
             ),
             TranslationInfoTileWidget(
               text: widget.sentence,
+            ),
+            SizedBox(
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -70,42 +97,74 @@ class _ReverseTranslationViewState extends State<ReverseTranslationView> {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
-                DropdownButton(
-                  items: supportedLanguages
-                      .map((description, value) => MapEntry(
-                          description,
-                          DropdownMenuItem(
-                            value: description,
-                            child: Text(
-                              value,
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          )))
-                      .values
-                      .toList(),
-                  value: supportedLanguageValue,
-                  onChanged: (String value) async {
-                    setState(() {
-                      isTranslated = false;
-                    });
-                    translation =
-                        await _translator.translate(widget.sentence, to: value);
-                    setState(() {
-                      supportedLanguageValue = value;
-                      isTranslated = true;
-                      //value is en
-                    });
-                  },
+                DropdownButtonHideUnderline(
+                  child: DropdownButton(
+                    items: supportedLanguages
+                        .map((description, value) => MapEntry(
+                            description,
+                            DropdownMenuItem(
+                              value: description,
+                              child: Text(
+                                value,
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                            )))
+                        .values
+                        .toList(),
+                    value: supportedLanguageValue,
+                    onChanged: (String value) async {
+                      setState(() {
+                        isTranslated = false;
+                      });
+                      translation = await _translator.translate(widget.sentence,
+                          to: value);
+                      setState(() {
+                        supportedLanguageValue = value;
+                        isTranslated = true;
+                        //value is en
+                      });
+                    },
+                  ),
                 ),
               ],
             ),
-            Container(
-              child: Text(
-                'Translated Text',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                softWrap: true,
-              ),
-              padding: EdgeInsets.only(top: 20, bottom: 0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Container(
+                  child: Text(
+                    'Translated Text',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    softWrap: true,
+                  ),
+                  padding: EdgeInsets.only(top: 40, bottom: 0, left: 10),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 40, bottom: 0),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.content_copy,
+                      color: Theme.of(context).accentIconTheme.color,
+                    ),
+                    onPressed: () async {
+                      if (isTranslated == true) {
+                        await Clipboard.setData(
+                            ClipboardData(text: translation));
+
+                        Scaffold.of(context).showSnackBar(SnackBar(
+                          content: Text('Copied to Clipboard!'),
+                          behavior: SnackBarBehavior.floating,
+                        ));
+                      } else {
+                        Scaffold.of(context).showSnackBar(SnackBar(
+                          content: Text('Select a language!'),
+                          behavior: SnackBarBehavior.floating,
+                        ));
+                      }
+                    },
+                  ),
+                ),
+              ],
             ),
             isTranslated
                 ? TranslationInfoTileWidget(
